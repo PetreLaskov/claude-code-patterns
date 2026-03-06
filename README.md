@@ -22,11 +22,9 @@ claude-md/                 CLAUDE.md architecture — templates, patterns, anti-
   pkm-vault.md             Template for knowledge management vaults
   business-cofounder.md    Template for Claude as business cofounder
 skills/                    Reusable skill library — thinking, deciding, writing, meta
-agents/                    Subagent archetypes — scout, workhorse, researcher, architect
 patterns/                  Collaboration patterns for specific domains
   pkm-workflows.md         PKM loops, extraction pipelines, thinking prompts
   exploration-to-output.md Connecting thinking to shipping
-hooks/                     Hook patterns for deterministic behavior
 philosophy/                The ideas underneath — why this approach works
 ```
 
