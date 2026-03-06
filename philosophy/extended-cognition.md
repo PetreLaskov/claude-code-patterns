@@ -24,7 +24,7 @@ This isn't metaphor. It's a claim from philosophy of mind (Clark & Chalmers, 199
 
 Claude Code lives in your terminal, has access to your filesystem, persists across sessions via CLAUDE.md and state files, and can be shaped with skills and hooks. It's not a chatbot you visit — it's infrastructure you inhabit.
 
-This makes it the first AI tool where extended cognition is architecturally natural:
+This makes it an AI tool where extended cognition is architecturally natural — perhaps the first where all the pieces are in place:
 - **CLAUDE.md** = shared long-term memory (what's always true)
 - **State files** = shared working memory (what's true now)
 - **Skills** = shared cognitive modes (how to think about X)
@@ -73,7 +73,7 @@ Hutchins also identified a finding that should comfort anyone building a system 
 
 ## Why disagreement matters more than agreement
 
-Edward Bordin's research on the Working Alliance (1979, extended by Horvath, Luborsky, and others across 295+ studies and 30,000+ subjects) produced a finding that should reframe how you think about human-AI collaboration: the quality of the working relationship accounts for roughly 7% of outcome variance. That sounds modest until you learn it is approximately seven times more predictive than the specific technique or method used. The partnership matters more than the prompt patterns.
+Edward Bordin's Working Alliance model (1979), subsequently validated by Horvath, Luborsky, Flückiger, and others across 295+ studies and 30,000+ subjects, produced a finding that should reframe how you think about human-AI collaboration: the quality of the working relationship accounts for roughly 7% of outcome variance. That sounds modest until you learn it is approximately seven times more predictive than the specific technique or method used. The partnership matters more than the prompt patterns.
 
 Bordin's model has three components — agreement on goals, clarity on tasks, and quality of the working bond — but the most striking finding concerns rupture-repair cycles. Relationships that experience disagreement or misalignment and then recover from it outperform relationships that never hit friction. The data shows V-shaped alliance patterns (a drop in relationship quality followed by recovery) correlating with better outcomes than flat, rupture-free patterns. Smooth is not strong. Tested is strong.
 

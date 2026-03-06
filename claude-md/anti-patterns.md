@@ -53,7 +53,7 @@ Personality instructions consume context and cognitive budget that could be spen
 # Bad
 ## Current State (written 3 months ago, never updated)
 We're working on the authentication refactor. The main blocker is
-the OAuth provider migration. Sarah is handling the frontend
+the OAuth provider migration. The frontend team is handling the
 integration. Target: end of Q3.
 ```
 
@@ -107,7 +107,7 @@ Listing everything the model can do tells it nothing about what it should do. Th
 
 You spend your Claude Code session improving your Claude Code setup — refining CLAUDE.md, tweaking skills, reorganizing modules. It feels productive. The system gets more elegant. Nothing ships.
 
-This is the meta-trap: building the toolshop instead of using the tools. As one practitioner observed: "Men will go on a Claude Code weekend bender and have nothing to show for it but a 'more optimized Claude setup'."
+This is the meta-trap: building the toolshop instead of using the tools. A common observation in the community: spending a weekend building a more optimized Claude setup and having nothing else to show for it.
 
 **Fix:** The test is simple: "Am I using the system or improving the system?" Both are legitimate. But if you haven't used the system to produce output this session, stop improving it. Use it first, improve it from what you learn.
 

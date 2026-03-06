@@ -23,4 +23,11 @@ Read the conversation. Match what's happening to the right skill.
 - `/optimize-prompt` — ceiling performance from a prompt
 - `/subtext` — read beneath the surface
 
+**Process**
+- `/preflight` — surface ambiguity, assumptions, failure points before executing
+- `/interview-me` — extract requirements before building
+
+**Meta**
+- `/extract-pattern` — extract the reusable shape from a good session
+
 Recommend 1-2 skills. Say why. If none fit, say so — not every moment needs a skill.

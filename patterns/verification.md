@@ -1,6 +1,6 @@
 # Verification Architecture
 
-The single most important leverage point in Claude Code, according to Boris Cherny (Claude Code's creator): give Claude a way to verify its own work. If it has that feedback loop, output quality doubles or triples.
+The single most important leverage point in Claude Code, according to Boris Cherny at Anthropic: give Claude a way to verify its own work. If it has that feedback loop, output quality improves dramatically.
 
 ## The verification quadrant
 

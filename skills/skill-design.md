@@ -4,7 +4,7 @@ How to create Claude Code skills that consistently produce high-quality output.
 
 ## The mechanism
 
-A skill file at `~/.claude/commands/my-skill.md` becomes `/my-skill` in Claude Code. When invoked, the file content replaces the system context for that response. `$ARGUMENTS` gets replaced with whatever the user types after the command.
+A skill file at `~/.claude/commands/my-skill.md` becomes `/my-skill` in Claude Code. When invoked, the file content is injected into the conversation alongside your existing CLAUDE.md context. `$ARGUMENTS` gets replaced with whatever the user types after the command.
 
 This means: your skill is a system prompt. Everything you know about good prompting applies.
 
