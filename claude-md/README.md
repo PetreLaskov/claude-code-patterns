@@ -46,6 +46,10 @@ When writing CLAUDE.md or any prompt, use this diagnostic (from Amanda Askell, A
 
 Whatever you'd tell the competent stranger — that's what belongs in your CLAUDE.md. What you'd assume they already know — leave it out. What you'd show them before they start — that's your reference material.
 
+## CLAUDE.md as self-improving system
+
+When the model encounters a recurring problem — a correction you've made before, a failure mode that keeps surfacing, a domain rule it keeps forgetting — it should propose a CLAUDE.md update that prevents the category, not just the instance. Don't wait for the user to ask. The correction-to-principle habit is what turns CLAUDE.md from a static configuration file into a compound learning system. Power users report this as their single most important long-term practice: every correction that reaches the instruction file eliminates that entire class of error permanently.
+
 ## Templates
 
 - **[Single project](single-project.md)** — One repo, one CLAUDE.md. Most common case.

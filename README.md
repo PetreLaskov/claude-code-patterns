@@ -22,10 +22,13 @@ claude-md/                 CLAUDE.md architecture — templates, patterns, anti-
   pkm-vault.md             Template for knowledge management vaults
 skills/                    Reusable skill library — thinking, deciding, writing, meta
 patterns/                  Collaboration patterns for specific domains
-  pkm-workflows.md         PKM loops, extraction pipelines, thinking prompts
-  session-management.md    Context windows, clearing discipline, parallel sessions
+  context-engineering.md   Context architecture — rot, compaction, attention budget
+  instruction-hazards.md   Instructions that degrade output and safe alternatives
+  safety-architecture.md   Blast radius, memory poisoning, graduated consent
+  session-management.md    Context windows, clearing discipline, session diagnostics
   human-practice.md        The human skill layer — what YOU do differently
   verification.md          When to trust output vs. when to verify
+  pkm-workflows.md         PKM loops, extraction pipelines, thinking prompts
 philosophy/                The ideas underneath — why this approach works
 ```
 

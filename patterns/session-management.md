@@ -59,3 +59,21 @@ This isn't about speed — it's about context hygiene. A session debugging a CSS
 As you move from single-session to multi-session work, the bottleneck shifts. The scarce resource isn't the model's capability — it's your attention. Deciding which session to focus on, which results to review, and which directions to pursue becomes the primary human skill.
 
 This is the transition from "doing the work with AI help" to "directing the work that AI does." The human's job becomes attention allocation, quality judgment, and strategic direction — not task execution.
+
+---
+
+## Session-Health Diagnostics
+
+Check these during or after any working session. If a signal fires, apply the fix immediately — don't wait for things to get worse.
+
+| Signal | Anti-pattern | Fix |
+|---|---|---|
+| Drift outside original scope | Scope creep | Restate the goal, constrain. Name the expansion and decide whether it's intentional. |
+| Repeating the same correction | Context degradation or bad instruction | After 2 failed corrections, stop. `/clear` and restart with a better initial prompt. |
+| 15+ file reads without producing output | Infinite exploration | Set a deliverable checkpoint. Force output — a draft, a decision, a partial artifact. |
+| Silent processing pauses | No progress signal | State what you're doing before any long operation. Unannounced silence reads as failure. |
+| Three questions without returning anything | Interview loop | Make assumptions, produce a draft, iterate. Deliver something before asking the next question. |
+
+### The correction loop anti-pattern
+
+After two failed corrections in one session, stop. The session is degraded — the accumulated context is now working against you, not for you. `/clear` and restart with a better initial prompt that incorporates what you learned from the failures. Don't keep pushing against a polluted context window. The cost of re-establishing context (which CLAUDE.md handles automatically) is always lower than the cost of fighting a degraded session.

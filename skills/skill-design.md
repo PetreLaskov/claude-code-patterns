@@ -70,6 +70,12 @@ A skill works if:
 3. The failure mode named in the skill is actually avoided
 4. The skill is short enough to remember what it does from the name alone
 
+## Token cost awareness
+
+Skills are dramatically cheaper than MCP tools in your context budget. An MCP tool declaration costs roughly 1,600 tokens — it loads into context whether you use it or not. A skill's frontmatter costs roughly 58 tokens, and the skill body only loads when invoked. This isn't a minor optimization. Ten MCP tools consume ~16,000 tokens at rest; ten skills consume ~580. When context is a finite resource with non-linear degradation (see [session management](../patterns/session-management.md)), the difference between 16K tokens of tool declarations and 580 tokens of skill headers is the difference between a session that degrades early and one that stays sharp.
+
+Prefer skills over MCP tools when the task is prompt-shaped (cognitive mode, analysis, synthesis). Reserve MCP tools for capabilities that require external system access.
+
 ## Naming
 
 - Verb-first: `think-hard`, `decide`, `compress`, `diagnose`
