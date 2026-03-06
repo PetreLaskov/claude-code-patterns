@@ -25,6 +25,9 @@ skills/                    Reusable skill library — thinking, deciding, writin
 patterns/                  Collaboration patterns for specific domains
   pkm-workflows.md         PKM loops, extraction pipelines, thinking prompts
   exploration-to-output.md Connecting thinking to shipping
+  session-management.md    Context windows, clearing discipline, parallel sessions
+  human-practice.md        The human skill layer — what YOU do differently
+  verification.md          When to trust output vs. when to verify
 philosophy/                The ideas underneath — why this approach works
 ```
 

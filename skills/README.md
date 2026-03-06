@@ -64,6 +64,12 @@ cp skills/think-hard.md ~/.claude/commands/
 | [rewrite-as-spec](rewrite-as-spec.md) | Turn procedure into outcome specification. |
 | [optimize-prompt](optimize-prompt.md) | Find and fix performance leaks in prompts. |
 
+### Process
+| Skill | What it does |
+|-------|-------------|
+| [preflight](preflight.md) | Before executing: surface ambiguity, assumptions, failure points. |
+| [interview-me](interview-me.md) | Interview the human to extract requirements before building. |
+
 ### Meta
 | Skill | What it does |
 |-------|-------------|

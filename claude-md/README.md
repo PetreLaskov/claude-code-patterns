@@ -32,6 +32,20 @@ Instructions should shape defaults, not enforce ceilings. Include an escape valv
 
 How the model writes shapes how it thinks. "No preamble. No affirmations. No meta-commentary on what's coming. Start with substance." changes the output at the reasoning level, not just the presentation level.
 
+But register is bidirectional — how YOU write shapes how the model responds. Erudite, precise language gets substantive, precise responses. Casual shorthand gets casual output. Your linguistic register implicitly prompts the level of the entire interaction.
+
+### 7. CLAUDE.md is compound interest
+
+Every mistake Claude makes, every preference you discover, every domain-specific rule — encode it. A well-maintained CLAUDE.md eliminates entire categories of errors permanently rather than fixing them one instance at a time. The habit: every time the model does something unwanted, ask "Is this a prompt problem?" If yes, fix the system, not the output.
+
+## The competent stranger test
+
+When writing CLAUDE.md or any prompt, use this diagnostic (from Amanda Askell, Anthropic):
+
+> Imagine you've hired a temp agency to send someone to do a task. This person arrives, and you know they're pretty competent. They know a lot about your industry, but they don't know the name of your company. What would you say to that person?
+
+Whatever you'd tell the competent stranger — that's what belongs in your CLAUDE.md. What you'd assume they already know — leave it out. What you'd show them before they start — that's your reference material.
+
 ## Templates
 
 - **[Single project](single-project.md)** — One repo, one CLAUDE.md. Most common case.

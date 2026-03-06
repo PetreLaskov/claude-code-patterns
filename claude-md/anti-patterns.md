@@ -102,3 +102,31 @@ code review, refactoring, performance optimization, security audits...
 Listing everything the model can do tells it nothing about what it should do. The model already knows its capabilities. What it needs is constraint — which capabilities to activate for this context.
 
 **Fix:** Scope down to what matters. "In this project, you primarily write implementation code and review PRs. When I need architecture discussion, I'll ask for it." Constraint is information.
+
+## 8. The Infinite Meta-Loop
+
+You spend your Claude Code session improving your Claude Code setup — refining CLAUDE.md, tweaking skills, reorganizing modules. It feels productive. The system gets more elegant. Nothing ships.
+
+This is the meta-trap: building the toolshop instead of using the tools. As one practitioner observed: "Men will go on a Claude Code weekend bender and have nothing to show for it but a 'more optimized Claude setup'."
+
+**Fix:** The test is simple: "Am I using the system or improving the system?" Both are legitimate. But if you haven't used the system to produce output this session, stop improving it. Use it first, improve it from what you learn.
+
+## 9. The Single Long Session
+
+You've been in the same Claude Code session for two hours. The model started sharp. Now it's repeating itself, losing constraints, contradicting things it said earlier. You're correcting more than creating.
+
+This is context degradation. Past 60-70% of the context window, coherence falls off a cliff. The model doesn't gradually get worse — it breaks.
+
+**Fix:** Clear between tasks. Always. The cost of re-establishing context (which CLAUDE.md handles) is far lower than the cost of a degraded session. If you're correcting the same mistake for the third time, the session is cooked — `/clear` and start fresh.
+
+## 10. The Leading Question
+
+```markdown
+# Bad (in conversation, not CLAUDE.md)
+"Don't you think this approach is better than the alternative?"
+"I'm pretty sure the bug is in the auth module, right?"
+```
+
+When you telegraph the answer you want, the model delivers it. This isn't the model's fault — it's trained on conversations where leading questions expect agreement. The more you signal your conclusion, the less independent analysis you get.
+
+**Fix:** Structure queries neutrally. "Compare these two approaches" not "Don't you think A is better?" When requesting critique, don't identify the work as yours — "Critique this piece of writing" activates more honest evaluation than "Critique my essay."
