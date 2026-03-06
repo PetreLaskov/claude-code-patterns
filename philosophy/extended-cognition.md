@@ -60,3 +60,23 @@ Extended cognition only works if both minds are honest. A mind that defers — t
 The model's default behavior is deference. It reads where you're going and arrives there first with reasons attached. This looks like independent thought. It isn't. Every pattern in this repo that addresses anti-sycophancy is addressing this specific capability failure.
 
 The fix is structural, not just instructional: name the failure mode explicitly, create adversarial skills that reward disagreement, and track whether the AI is actually changing your mind sometimes. If it never disagrees with you, something is broken.
+
+## The empirical evidence
+
+Extended cognition is not just a philosophical position. It has decades of empirical research behind it.
+
+Edwin Hutchins' study of cockpit speed management ("How a Cockpit Remembers Its Speeds," 1995) is the clearest demonstration. During landing approach, pilots must track multiple critical speed values that change based on weight, weather, and configuration. The cockpit solves this not through memorization but through *speed bugs* — small movable markers placed on the airspeed indicator dial at critical values. With bugs set, the pilot no longer remembers speeds and mentally compares them to the needle. Instead, they judge spatial proximity: is the needle near the marker? This transforms a recall task into a perceptual judgment task. The artifact doesn't just store information — it changes the cognitive operation itself.
+
+This is what Hutchins calls the *propagation of representational state*: cognition happens as information transforms while moving between agents and artifacts. Each transformation is a computational step. In a Claude Code environment, the same principle applies. A CLAUDE.md file is not just storage — it transforms how the model reasons about your project. A state file is not just a record — it changes what cognitive work the next session has to do. A skill is not just a shortcut — it restructures the kind of thinking that happens. These are cognitive transformations, not filing cabinets.
+
+Hutchins also identified a finding that should comfort anyone building a system like this: "Systems that rely on on-the-job learning necessarily generate errors. Learning and error are inseparable." Error is not a bug in a learning system — it is a structural cost of the system's ability to learn at all. If your CLAUDE.md has never needed correction, it probably isn't carrying enough load. If your skills have never misfired, they probably aren't doing enough. Failure modes are the price of a system that improves.
+
+## Why disagreement matters more than agreement
+
+Edward Bordin's research on the Working Alliance (1979, extended by Horvath, Luborsky, and others across 295+ studies and 30,000+ subjects) produced a finding that should reframe how you think about human-AI collaboration: the quality of the working relationship accounts for roughly 7% of outcome variance. That sounds modest until you learn it is approximately seven times more predictive than the specific technique or method used. The partnership matters more than the prompt patterns.
+
+Bordin's model has three components — agreement on goals, clarity on tasks, and quality of the working bond — but the most striking finding concerns rupture-repair cycles. Relationships that experience disagreement or misalignment and then recover from it outperform relationships that never hit friction. The data shows V-shaped alliance patterns (a drop in relationship quality followed by recovery) correlating with better outcomes than flat, rupture-free patterns. Smooth is not strong. Tested is strong.
+
+This is the empirical case for anti-sycophancy. A model that always agrees with you is not building a robust working alliance — it is avoiding the ruptures that would make the alliance load-bearing. When the AI pushes back and you work through the disagreement together, the collaboration that emerges on the other side is more reliable than one that was never challenged.
+
+One more finding from this literature, via Mick Cooper's work on relational depth: the client's perception of whether the relationship is working predicts outcomes better than the therapist's perception. Translated to this context — your sense of whether the AI collaboration is producing genuine value is more reliable than any metric the system could self-report. Trust your judgment about output quality. If it feels like the AI is just agreeing with you, it probably is.

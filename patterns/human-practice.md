@@ -68,3 +68,17 @@ The deepest frame on what prompting actually is, from Amanda Askell:
 > The skill is taking things that are in your brain, analyzing them enough to feel like you fully understand them, and then externalizing them for a reasonable person off the street.
 
 This is why prompting improves your own thinking: the act of making your intent explicit enough for a capable stranger forces you to understand it yourself. The prompt is a byproduct of clarity, not a substitute for it.
+
+## Reciprocity of informativeness
+
+Every time you ask the model for something — an analysis, a review, a decision — pair it with something concrete from you. A file to look at. A constraint. A specific example. The model's output quality degrades when it's answering abstract questions in a vacuum and improves dramatically when it has specific artifacts to work with.
+
+The ratio matters: never extract three times without delivering once. If you ask three questions in a row without giving the model new material to ground on, the answers get thinner, more generic, more likely to drift. Feed the conversation. The model's best outputs come from reacting to specific material, not generating from general knowledge.
+
+## Artifact-grounded conversation
+
+"Walk me through this file" produces richer, more accurate output than "Tell me about your architecture." Abstract questions produce abstract answers. Pointing the model at a specific file, function, or document forces specificity that abstract prompting cannot.
+
+This applies especially when you need to surface tacit knowledge — decisions, conventions, patterns that aren't written down anywhere. The direct question ("What are your coding conventions?") gets a generic answer. The grounded question ("Look at this file and tell me what conventions you can infer") gets observations you can actually verify and build on.
+
+When extracting knowledge that lives in your head rather than in documents, ask: "What do you know about this that isn't written here? If someone new took over, what would they miss?" These questions use the artifact as a launch point into the unwritten context surrounding it — which is usually where the most valuable information lives.

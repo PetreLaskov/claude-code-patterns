@@ -107,3 +107,22 @@ When something goes wrong, the response is always **diagnostic before corrective
 **Additive-first recovery.** When repairing damage, prefer adding content over removing it. Comment out rather than delete. Preserve the evidence of what went wrong — it informs the fix.
 
 **No silent corrections.** If you discover you made an error, announce it. State what happened, what the impact is, and what you propose to do about it. Transparency during failure is more important than transparency during success.
+
+---
+
+## Beyond Prevention: Adaptive Capacity
+
+Everything above is prevention-oriented — gates, consent tiers, blast-radius controls. That is necessary but incomplete. Safety engineering distinguishes two deeper concerns that most agent safety architectures ignore.
+
+**Active vs latent failures.** James Reason's Swiss Cheese Model separates two failure modes. Active failures are visible mistakes — the wrong file deleted, the bad edit applied. Latent conditions are systemic weaknesses that sit dormant until an active failure finds them: stale instruction files loaded at boot, missing safety rules in a CLAUDE.md, unclear scope boundaries that let an agent wander. You cannot eliminate human error; it is irreducible. So defenses must compensate for foreseeable mistakes rather than assume perfection. The gates in this pattern should target latent conditions — not just catch the active error after it happens, but remove the systemic conditions that let it succeed.
+
+**Safety-I vs Safety-II.** Erik Hollnagel distinguishes two safety paradigms. Safety-I defines safety as the absence of accidents: prevent bad things, investigate failures, build barriers. Safety-II defines safety as the presence of adaptive capacity: understand why things usually succeed, build the ability to handle the unexpected. Most agent safety is pure Safety-I — gates, reviews, consent tiers, rollback procedures. Safety-II asks a different question: can the system adapt when something genuinely novel happens? Hollnagel's key insight is that things go wrong and things go right for the same basic reasons. The variability that produces errors also produces successful adaptation.
+
+**Four resilience abilities.** Hollnagel's Resilience Assessment Grid identifies the capacities a robust system needs:
+
+1. **Responding** — Reacting appropriately when situations demand intervention. Knowing what to do now.
+2. **Monitoring** — Detecting that conditions require action before they become critical. Noticing what is changing.
+3. **Learning** — Modifying behavior based on experience. Incorporating what has happened.
+4. **Anticipating** — Preparing for developments before they materialize. Considering what might happen.
+
+A well-designed agent environment should support all four. Most support only the first two (responding through gates, monitoring through staleness checks). Learning and anticipating — updating safety rules from observed near-misses, preparing for failure modes you have not yet encountered — are where genuine resilience lives.

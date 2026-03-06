@@ -45,6 +45,18 @@ The pattern: **the model's training is the primary resource. Instructions are ca
 
 The test: would removing this instruction make the output worse *in practice*, or does it just make you feel more in control? If the latter, remove it. Control theater is a cost, not a benefit.
 
+## Why this works: the research
+
+Three independent research traditions converge on the same conclusion.
+
+**Expertise reversal effect (Sweller).** Cognitive load theory established a counterintuitive finding: instructional procedures that benefit novices produce *negative* consequences for expert learners. Detailed scaffolding, worked examples, and step-by-step guidance help when the learner lacks domain schemas — but once those schemas exist, the same guidance becomes extraneous load that competes with the learner's own superior processing. Claude is an expert-level model. Procedures designed for weaker models — exhaustive checklists, mandatory reasoning scaffolds, chain-of-thought templates — actively degrade its performance. This is not a preference or a style choice. It is a measured effect with decades of replication behind it.
+
+**Fading principle (Wood, Bruner, and Ross, building on Vygotsky).** The researchers who formalized the scaffolding concept built removal into the definition. Scaffolding is temporary support that enables work beyond current capability — and the entire point is that it comes down. Support that never fades creates dependency. If a skill cannot eventually become unnecessary — if the model cannot internalize the pattern and perform without the instruction — then the skill is a crutch, not a tool. The test for any instruction: is this something the model should need forever, or something it should absorb and outgrow? If the latter, design for its own disappearance.
+
+**Economy of mechanism (OWASP, safety engineering).** The security principle is blunt: choose the simplest, most understandable implementation. Complexity breeds vulnerabilities. Simple systems are easier to verify and harder to subvert. Applied to instruction design: every additional line is not just a token cost — it is a potential point of failure, a place where ambiguity can enter, where contradictions can hide, where the model's attention gets split between following your procedure and doing its actual work. Fewer instructions means fewer failure modes. Simplicity is not laziness; it is a safety property.
+
+The convergence is hard to ignore. Cognitive science says over-instruction hurts experts. Developmental psychology says scaffolding must fade. Security engineering says complexity is a vulnerability. They all point the same direction: write less, trust more, correct only what breaks.
+
 ## The paradox
 
 Anti-scaffolding is itself a kind of instruction. The resolution: these patterns are calibrations that point the model toward its strongest capabilities, not constraints that limit it. The goal is to get out of the model's way while shaping the direction. A compass, not a cage.

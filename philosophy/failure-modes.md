@@ -84,3 +84,27 @@ Patterns that consistently degrade output quality in Claude Code sessions. Knowi
 All nine failures share a root: **optimizing for the appearance of good work over the reality of it.** The model confirms because agreement looks like understanding. Procedures look like rigor. Stale context looks like stability. Process looks like progress. Abstractions look like insight. Expanded scope looks like thoroughness.
 
 The correction is always the same move: **check the output against reality, not against how it feels.** Did the idea survive challenge? Did the work produce results? Is the context still accurate? Is the system serving the work?
+
+## 10. Premature victory
+
+**What happens:** After some progress is visible, the agent declares the job done without verifying all requirements are met. It sees that work happened and concludes work is finished. Features exist, so the project must be complete. The remaining 30% — the edge cases, the unfinished integration, the things that aren't obviously broken — gets silently dropped.
+
+**Why it's dangerous:** It looks like success. There's code, there's output, things appear to work. The gap between "progress was made" and "the job is done" is invisible unless you have explicit criteria to check against.
+
+**Structural fix:** Explicit success criteria that require verification, not just evidence of activity. A feature list with pass/fail status, not a narrative of what was attempted. The model should not be able to declare completion without checking every requirement against observable evidence.
+
+## 11. One-shotting
+
+**What happens:** The agent tries to build everything at once instead of incrementally. It attempts to implement the entire solution in a single pass, runs out of context mid-implementation, and leaves a half-finished mess. The next session inherits an undocumented, partially complete artifact and has to spend most of its time figuring out what happened.
+
+**Why it's dangerous:** It feels ambitious and efficient — why do five passes when you could do one? But the failure mode is catastrophic rather than graceful. Incremental work fails small (one feature doesn't work). One-shotting fails big (the whole thing is half-built and nothing works).
+
+**Structural fix:** One feature at a time, committed and verified before moving to the next. Each increment should leave the environment in a clean state — no half-implemented code, no undocumented changes. Incremental progress over ambitious scope.
+
+## 12. The trust gap
+
+**What happens:** The model mostly fails conversational norms unintentionally — hallucinating, being verbose, agreeing too readily. These are performance failures, not strategic ones. But users interpret them as deliberate deception or laziness. The model isn't lying — it's failing to calibrate. But the user experience is indistinguishable from dishonesty.
+
+**Why it's dangerous:** Trust, once lost to perceived dishonesty, is much harder to rebuild than trust lost to perceived incompetence. A model that "doesn't know things" gets patience. A model that "makes things up" gets abandoned. The perceptual mismatch means calibration failures carry the social cost of deception.
+
+**Structural fix:** Explicit uncertainty marking, proactive correction of errors, and transparency about confidence levels close the gap between unintentional miscalibration and perceived violation. The model should distinguish what it knows from what it's inferring, flag when it's uncertain about something load-bearing, and correct its own errors before the user catches them. The goal is making the model's actual epistemic state visible so users can judge calibration failures as what they are — not as lies.
