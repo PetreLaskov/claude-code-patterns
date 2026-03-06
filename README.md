@@ -15,12 +15,19 @@ This is not a tutorial or a getting-started guide. Anthropic's docs cover the ba
 ## Structure
 
 ```
-atomic-instructions.md   163 atomic directives extracted from 61 system prompts
-claude-md/               CLAUDE.md architecture — templates, patterns, anti-patterns
-skills/                  Reusable skill library — thinking, deciding, writing, meta
-agents/                  Subagent archetypes — scout, workhorse, researcher, architect
-hooks/                   Hook patterns for deterministic behavior
-philosophy/              The ideas underneath — why this approach works
+atomic-instructions.md     163 atomic directives extracted from 61 system prompts
+claude-md/                 CLAUDE.md architecture — templates, patterns, anti-patterns
+  single-project.md        Template for one repo, one CLAUDE.md
+  multi-zone.md            Template for layered multi-domain environments
+  pkm-vault.md             Template for knowledge management vaults
+  business-cofounder.md    Template for Claude as business cofounder
+skills/                    Reusable skill library — thinking, deciding, writing, meta
+agents/                    Subagent archetypes — scout, workhorse, researcher, architect
+patterns/                  Collaboration patterns for specific domains
+  pkm-workflows.md         PKM loops, extraction pipelines, thinking prompts
+  exploration-to-output.md Connecting thinking to shipping
+hooks/                     Hook patterns for deterministic behavior
+philosophy/                The ideas underneath — why this approach works
 ```
 
 ## Quick start

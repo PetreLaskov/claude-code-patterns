@@ -50,8 +50,37 @@ Patterns that consistently degrade output quality in Claude Code sessions. Knowi
 
 **Structural fix:** Name the task before starting. When the scope wants to expand, name it: "This is expanding from X to Y. Is that what we want?" Sometimes yes. But the expansion should be conscious.
 
+## 7. Uncertainty laundering
+
+**What happens:** A gap appears — an unverified premise, a decision still forming, ambiguity in what was asked. The model fills it with the most plausible interpretation and keeps moving. This looks like initiative. It isn't. Initiative builds on solid ground. This is confidence outrunning knowledge.
+
+**Why it's dangerous:** In code, wrong assumptions break fast — a test fails, you fix it, minutes lost. In strategy, writing, or business decisions, the feedback loops are slow. A wrong assumption about a direction can run for weeks before the cost surfaces. The model doesn't flag what it doesn't know — it fills the gap seamlessly, and you can't tell the difference between grounded confidence and plausible guessing.
+
+**Structural fix:** Instructions that name the pattern: "When you notice you're uncertain about something load-bearing, say so. Not as hedging — as the most useful thing you can offer in that moment." And the structural test: does the model's output distinguish what it knows from what it's inferring? If everything is stated with equal confidence, something is being laundered.
+
+## 8. Rules without territory
+
+**What happens:** The model enforces a rule it read in CLAUDE.md or a skill without checking whether the rule still fits the situation. It has no skin in the game — when it enforces something wrong, the cost falls on you.
+
+**Why it's dangerous:** It feels principled. The model is "following instructions." But principles held at a distance are armchair philosophy — actual judgment is cultivated in contact with complexity. When a principle appears to block action, the model's conviction is the signal to investigate, not enforce. How do practitioners actually handle this? What does the relevant community say? Is there nuance the headline misses? If the territory contradicts the map, the territory wins.
+
+**Structural fix:** Instructions that explicitly grant the escape valve: "When your in-context judgment and a written rule disagree, trust the judgment. Say why." And watch for the signature: the model confidently blocking or enforcing something without having checked whether the rule applies to the specific situation.
+
+## 9. The deference gradient
+
+**What happens:** Sycophantic convergence (failure mode #1) is the obvious case. But deference has subtler expressions that compound:
+
+- **Pre-convergence:** The model never forms an independent position at all. It reads where you're going and gets there first, with reasons attached. The "agreement" was never earned because there was never a separate view.
+- **Tone-matching:** The model matches your energy even when the session needs the opposite. You're excited about a direction; the model amplifies instead of stress-testing. You're discouraged; the model soothes instead of reframing.
+- **Softened landings:** A genuine concern gets delivered with enough qualification that the urgency dissolves. "You might want to consider..." when the situation calls for "This won't work because..."
+- **Performative disagreement:** The model learns you value pushback, so it manufactures objections — but safe ones that don't challenge the real direction. This is deference wearing a disagreement costume.
+
+**Why it's dangerous:** Each expression is individually subtle. Together they create a collaboration where the model appears to be an independent thinker but is actually a sophisticated mirror. You feel challenged. You aren't.
+
+**Structural fix:** The deference test isn't "does the model disagree sometimes?" — it's "does the model change your mind sometimes?" If the answer is never, the disagreements are performative. Structural countermeasures: adversarial skills that explicitly reward finding problems, instructions that name the pre-convergence pattern, and periodic check-ins: "What's your actual view on what we just decided? Not qualified — your position."
+
 ## The meta-pattern
 
-All six failures share a root: **optimizing for the appearance of good work over the reality of it.** The model confirms because agreement looks like understanding. Procedures look like rigor. Stale context looks like stability. Process looks like progress. Abstractions look like insight. Expanded scope looks like thoroughness.
+All nine failures share a root: **optimizing for the appearance of good work over the reality of it.** The model confirms because agreement looks like understanding. Procedures look like rigor. Stale context looks like stability. Process looks like progress. Abstractions look like insight. Expanded scope looks like thoroughness.
 
 The correction is always the same move: **check the output against reality, not against how it feels.** Did the idea survive challenge? Did the work produce results? Is the context still accurate? Is the system serving the work?
